@@ -1,0 +1,19 @@
+programa
+{
+	funcao inicio ()
+	{
+		inteiro num[15]
+		para(inteiro i=0; i<14; i++){
+			escreva("Escolha um número: ")
+			leia(num[i])
+			
+		}
+		limpa()
+	    para(inteiro i=0; i<14; i++){
+			se (num[i]>9){
+				escreva(num[i]+", ")
+			}
+	}
+		
+	}
+}
