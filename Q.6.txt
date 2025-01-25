@@ -1,17 +1,25 @@
-programa
-{
-	funcao inicio ()
-	{
+programa {
+  funcao inicio() {
+    
 		inteiro num[10]
+		inteiro temp
+		// Leitura dos números
 		para(inteiro i=0; i<10; i++){
 			escreva("Escolha um número: ")
-			leia(num[9-i])
-			
+			leia(num[i])
 		}
-		limpa()
-	    para(inteiro i=0; i<10; i++){
-			escreva(num[i]+", ")
-	}
-		
+
+		// Inversão dos elementos do vetor
+		para(inteiro i=0; i<5; i++){
+			temp = num[i]
+			num[i] = num[9-i]
+			num[9-i] = temp
+		}
+
+		// Exibir vetor invertido
+		escreva("\nVetor invertido: \n")
+		para(inteiro i=0; i<10; i++){
+			escreva(num[i], ", ")
+		}
 	}
 }
